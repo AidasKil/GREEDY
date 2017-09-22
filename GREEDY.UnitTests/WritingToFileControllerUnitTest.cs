@@ -30,6 +30,7 @@ namespace GREEDY.UnitTests
             //assert
             Assert.AreEqual(data + "\r\n", text);
             System.IO.File.Delete("testReceipt.txt");
+            throw (new Exception("whatever"));
         }
     }
 }
