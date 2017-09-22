@@ -9,14 +9,14 @@ namespace GREEDY.UnitTests
     [TestClass]
     public class OCRControllerUnitTest
     {
-        /*[TestMethod]
+        [TestMethod]
         public void UseOCRTest()
         {
             //arrange
             Receipt receipt = new Receipt();
-            var receiptText = File.ReadAllLines("../../TestData/Receipt/test1/originalData.txt").ToList();
+            var receiptText = File.ReadAllLines("../../../TestData/Receipt/test1/originalData.txt").ToList();
             //act
-            receipt = new Controllers.OCRController().UseOCR("../../TestData/Receipt/test1/original.jpg");
+            receipt = new Controllers.OCRController().UseOCR("../../../TestData/Receipt/test1/original.jpg");
             //assert
             Assert.IsTrue(receipt.LinesOfText.IsAlmostEqual(receiptText, receipt.PercentageMatched));
             Assert.IsFalse(receipt.LinesOfText.IsAlmostEqual(receiptText, (float)1.01));
@@ -28,11 +28,11 @@ namespace GREEDY.UnitTests
         {
             //arrange
             Receipt receipt = new Receipt();
-            var receiptText = File.ReadAllLines("../../TestData/Receipt/test1/originalData.txt").ToList();
+            var receiptText = File.ReadAllLines("../../../TestData/Receipt/test1/originalData.txt").ToList();
             //act
-            receipt = new Controllers.OCRController().UseOCR("../../TestData/Receipt/test1/original.jpg");
+            receipt = new Controllers.OCRController().UseOCR("../../../TestData/Receipt/test1/original.jpg");
             //assert
             Assert.IsTrue(receipt.LinesOfText.IsAlmostEqual(receiptText, (float)0.8));
-        }*/
+        }
     }
 }
