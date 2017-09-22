@@ -2,4 +2,4 @@ before_build:
     - nuget restore
 
 after_build:
-    - cmd: vstest.console /logger:Appveyor GREEDY.UnitTests.dll
+    - cmd: vstest.console.exe /logger:Appveyor C:\projects\greedy\GREEDY.UnitTests\bin\debug\x64\GREEDY.UnitTests.dll /Platform:x64
