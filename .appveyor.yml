@@ -1,2 +1,3 @@
+configuration: x64
 before_build:
     - nuget restore
