@@ -10,6 +10,11 @@ namespace GREEDY.UnitTests
     public class OCRControllerUnitTest
     {
         [TestMethod]
+        public void SomeTest()
+        {
+            Assert.IsTrue(true);
+        }
+        [TestMethod]
         public void UseOCRTest()
         {
             //arrange
