@@ -2,4 +2,6 @@ before_build:
     - nuget restore
 
 test:
+    - off
+after_build:
     - vstest.console /logger:Appveyor "C:\projects\greedy\GREEDY.UnitTests\bin\x64\Debug\GREEDY.UnitTests.dll"
